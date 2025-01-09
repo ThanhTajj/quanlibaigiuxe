@@ -23,7 +23,7 @@ class KhachhangController extends Controller
      */
     public function create()
     {
-        //
+        return view('create');
     }
 
     /**
