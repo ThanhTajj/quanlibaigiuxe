@@ -14,6 +14,11 @@
                 </div>
             </div>
             <div class="card-body">
+                @if (Session::has('thongbao'))
+                    <div class="alert alert-success">
+                        {{Session::get('thongbao')}}
+                    </div>
+                @endif
                 <table class="table table-bordered">
                     <thead>
                         <tr>
@@ -40,7 +45,12 @@
                                 <td>{{$kh->LoaiXe}}</td>
                                 <td>{{$kh->SDT}}</td>
                                 <td>
-
+                                    <form action="{{route('khachhang.destroy'), $kh->id}}" method="POST">
+                                        <a href="{{route('khachhang.edit', $kh->id)}}" class="btn btn-info">Sửa</a>
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger">Xóa</button>
+                                    </form>
                                 </td>
                             </tr>
                         @endforeach

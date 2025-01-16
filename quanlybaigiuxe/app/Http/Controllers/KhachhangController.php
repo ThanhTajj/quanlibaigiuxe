@@ -31,7 +31,8 @@ class KhachhangController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Khachhang::create($request->all());
+        return redirect()->route('khachhang.index')->with('thongbao', 'Thêm thành công!');
     }
 
     /**
@@ -47,22 +48,24 @@ class KhachhangController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return view('edit', compact('khachhang'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Khachhang $khachhang)
     {
-        //
+        $khachhang->update($request->all());
+        return redirect()->route('khachhang.index')->with('thongbao', 'Cập nhật thành công!');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Khachhang $khachhang)
     {
-        //
+        $khachhang->delete();
+        return redirect()->route('khachhang.index')->with('thongbao', 'Xóa thành công!');
     }
 }
