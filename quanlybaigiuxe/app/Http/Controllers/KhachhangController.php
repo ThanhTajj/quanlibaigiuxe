@@ -14,8 +14,8 @@ class KhachhangController extends Controller
      */
     public function index()
     {
-        $khachhang = Khachhang::paginate(5);
-        return view('index', compact('khachhang'))->with('i', (request()->input('page', 1) -1) *5);
+        $khachhang = Khachhang::all();
+        return view('index', compact('khachhang'))->with('i', 0);
     }
 
     /**
@@ -32,7 +32,7 @@ class KhachhangController extends Controller
     public function store(Request $request)
     {
         Khachhang::create($request->all());
-        return redirect()->route('khachhang.index')->with('thongbao', 'Thêm thành công!');
+        return redirect(url('https://literate-eureka-jjj6497p7wj35g4v-8000.app.github.dev/khachhang'))->with('thongbao', 'Thêm thành công!');
     }
 
     /**
@@ -46,19 +46,20 @@ class KhachhangController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit($id)
     {
+        $khachhang = Khachhang::findOrFail($id);
         return view('edit', compact('khachhang'));
-    }
+    }    
 
     /**
      * Update the specified resource in storage.
      */
     public function update(Request $request, Khachhang $khachhang)
     {
-        $khachhang->update($request->all());
-        return redirect()->route('khachhang.index')->with('thongbao', 'Cập nhật thành công!');
-    }
+        $khachhang->fill($request->all())->save();
+        return redirect(url('https://literate-eureka-jjj6497p7wj35g4v-8000.app.github.dev/khachhang'))->with('thongbao', 'Cập nhật thành công!');
+    }    
 
     /**
      * Remove the specified resource from storage.

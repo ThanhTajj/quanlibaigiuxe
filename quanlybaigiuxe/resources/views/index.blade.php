@@ -9,7 +9,7 @@
                         <h3>Quản lý bãi giữ xe</h3>
                     </div>
                     <div class="col-md-6">
-                        <a href="{{route('khachhang.create')}}" class="btn btn-primary float-end">Thêm mới</a>
+                        <a href="{{url('https://literate-eureka-jjj6497p7wj35g4v-8000.app.github.dev/khachhang/create')}}" class="btn btn-primary float-end">Thêm mới</a>
                     </div>
                 </div>
             </div>
@@ -45,12 +45,12 @@
                                 <td>{{$kh->LoaiXe}}</td>
                                 <td>{{$kh->SDT}}</td>
                                 <td>
-                                    <form action="{{route('khachhang.destroy'), $kh->id}}" method="POST">
-                                        <a href="{{route('khachhang.edit', $kh->id)}}" class="btn btn-info">Sửa</a>
+                                    <form action="{{ route('khachhang.destroy', $kh->id) }}" method="POST">
+                                        <a href="{{ url("https://literate-eureka-jjj6497p7wj35g4v-8000.app.github.dev/khachhang/{$kh->id}/edit") }}" class="btn btn-info">Sửa</a>
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="btn btn-danger">Xóa</button>
-                                    </form>
+                                        <button type="submit" class="btn btn-danger" onclick="return confirm('Bạn có chắc chắn muốn xóa không?');">Xóa</button>
+                                    </form>                                                                        
                                 </td>
                             </tr>
                         @endforeach

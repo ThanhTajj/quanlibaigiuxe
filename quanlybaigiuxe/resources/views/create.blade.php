@@ -9,12 +9,12 @@
                         <h3>Thêm khách hàng</h3>
                     </div>
                     <div class="col-md-6">
-                        <a href="{{route('khachhang.index')}}" class="btn btn-primary float-end">Danh sách khách hàng</a>
+                        <a href="{{url('https://literate-eureka-jjj6497p7wj35g4v-8000.app.github.dev/khachhang')}}" class="btn btn-primary float-end">Danh sách khách hàng</a>
                     </div>
                 </div>
             </div>
             <div class="card-body">
-                <form action="{{route('khachhang.store')}}" method="POST">
+                <form action="{{url('https://literate-eureka-jjj6497p7wj35g4v-8000.app.github.dev/khachhang')}}" method="POST">
                     @csrf
                     <div class="row">
                         <div class="col-md-6">
