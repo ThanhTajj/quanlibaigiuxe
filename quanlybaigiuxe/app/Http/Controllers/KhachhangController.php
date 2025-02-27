@@ -14,9 +14,9 @@ class KhachhangController extends Controller
      */
     public function index()
     {
-        $khachhang = Khachhang::all();
+        $khachhang = Khachhang::orderBy('MaKH', 'asc')->get();
         return view('index', compact('khachhang'))->with('i', 0);
-    }
+    }    
 
     /**
      * Show the form for creating a new resource.
@@ -67,6 +67,6 @@ class KhachhangController extends Controller
     public function destroy(Khachhang $khachhang)
     {
         $khachhang->delete();
-        return redirect()->route('khachhang.index')->with('thongbao', 'Xóa thành công!');
+        return redirect(url('https://literate-eureka-jjj6497p7wj35g4v-8000.app.github.dev/khachhang'))->with('thongbao', 'Xóa thành công!');
     }
 }

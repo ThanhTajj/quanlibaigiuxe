@@ -45,7 +45,7 @@
                                 <td>{{$kh->LoaiXe}}</td>
                                 <td>{{$kh->SDT}}</td>
                                 <td>
-                                    <form action="{{ route('khachhang.destroy', $kh->id) }}" method="POST">
+                                    <form action="{{ url('https://literate-eureka-jjj6497p7wj35g4v-8000.app.github.dev/khachhang/' . $kh->id) }}" method="POST">
                                         <a href="{{ url("https://literate-eureka-jjj6497p7wj35g4v-8000.app.github.dev/khachhang/{$kh->id}/edit") }}" class="btn btn-info">Sửa</a>
                                         @csrf
                                         @method('DELETE')
