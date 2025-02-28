@@ -7,22 +7,22 @@
 
 ## How to Deploy
 ### Clone the Repository:
-git clone https://github.com/ThanhTajj/quanlibaigiuxe.git
+git clone https://github.com/ThanhTajj/quanlibaigiuxe.git  
 cd quanlybaigiuxe
 ### Install Dependencies:
-composer install
+composer install  
 npm install
 ### Set Up Environment Variables:
-cp .env.example .env
+cp .env.example .env  
 php artisan key:generate
 ### Configure Database Settings:
-Edit the .env file:
-DB_CONNECTION=sqlite
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=/workspaces/quanlibaigiuxe/quanlybaigiuxe/database/db.sqlite
-DB_USERNAME=root
-DB_PASSWORD=
+Edit the .env file:  
+DB_CONNECTION=sqlite  
+DB_HOST=127.0.0.1  
+DB_PORT=3306  
+DB_DATABASE=/workspaces/quanlibaigiuxe/quanlybaigiuxe/database/db.sqlite  
+DB_USERNAME=root  
+DB_PASSWORD=  
 ### Run Migrations and Seed the Database:
 php artisan migrate --seed
 ### Start the Local Development Server:
@@ -32,9 +32,11 @@ https://literate-eureka-jjj6497p7wj35g4v-8000.app.github.dev/
 
 ## UI
 <img src="quanlybaigiuxe/assets/images/loginorregister.png" alt="Select log in or register screen">
-<img src="quanlybaigiuxe/assets/images/login.png" alt="Log in screen">
-<img src="quanlybaigiuxe/assets/images/forgotpassword.png" alt="Forgot password screen">
-<img src="quanlybaigiuxe/assets/images/emailpasswordresetlink.png" alt="Email password reset link screen">
+<p align="center">
+  <img src="quanlybaigiuxe/assets/images/login.png" alt="Log in screen" width="33%">
+    <img src="quanlybaigiuxe/assets/images/forgotpassword.png" alt="Forgot password screen" width="33%">
+    <img src="quanlybaigiuxe/assets/images/emailpasswordresetlink.png" alt="Email password reset link screen" width="33%">
+</p>
 <img src="quanlybaigiuxe/assets/images/index.png" alt="Costumer list screen">
 <img src="quanlybaigiuxe/assets/images/create.png" alt="Create screen">
 <img src="quanlybaigiuxe/assets/images/update.png" alt="Update screen">
