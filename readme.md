@@ -45,3 +45,19 @@ https://literate-eureka-jjj6497p7wj35g4v-8000.app.github.dev/
 ## UML diagram
 ### Use Case
 <img src="quanlybaigiuxe/assets/images/uc.png" alt="UC diagram">
+
+### Sequence diagram
+Login sequence diagram
+<img src="quanlybaigiuxe/assets/images/seqlogin.png" alt="Login sequence diagram">
+Register sequence diagram
+<img src="quanlybaigiuxe/assets/images/seqregister.png" alt="Register sequence diagram">
+Reset password sequence diagram
+<img src="quanlybaigiuxe/assets/images/seqresetpass.png" alt="Reset password sequence diagram">
+Costumer list sequence diagram
+<img src="quanlybaigiuxe/assets/images/seqcoslist.png" alt="Costumer list sequence diagram">
+Create sequence diagram
+<img src="quanlybaigiuxe/assets/images/seqcreate.png" alt="Create sequence diagram">
+Update sequence diagram
+<img src="quanlybaigiuxe/assets/images/sequpdate.png" alt="Update sequence diagram">
+Delete sequence diagram
+<img src="quanlybaigiuxe/assets/images/seqdelete.png" alt="Delete sequence diagram">
