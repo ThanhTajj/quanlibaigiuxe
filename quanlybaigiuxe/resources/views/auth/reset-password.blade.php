@@ -1,5 +1,5 @@
 <x-guest-layout>
-    <form method="POST" action="{{ route('password.store') }}">
+    <form method="POST" action="https://literate-eureka-jjj6497p7wj35g4v-8000.app.github.dev/reset-password">
         @csrf
 
         <!-- Password Reset Token -->

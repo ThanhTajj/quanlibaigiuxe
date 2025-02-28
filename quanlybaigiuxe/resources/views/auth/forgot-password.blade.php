@@ -6,7 +6,7 @@
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
-    <form method="POST" action="{{ route('password.email') }}">
+    <form action="https://literate-eureka-jjj6497p7wj35g4v-8000.app.github.dev/forgot-password" method="POST">
         @csrf
 
         <!-- Email Address -->
