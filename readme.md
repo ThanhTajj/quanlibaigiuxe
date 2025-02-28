@@ -33,9 +33,9 @@ https://literate-eureka-jjj6497p7wj35g4v-8000.app.github.dev/
 ## UI
 <img src="quanlybaigiuxe/assets/images/loginorregister.png" alt="Select log in or register screen">
 <p align="center">
-  <img src="quanlybaigiuxe/assets/images/login.png" alt="Log in screen" width="33%">
-    <img src="quanlybaigiuxe/assets/images/forgotpassword.png" alt="Forgot password screen" width="33%">
-    <img src="quanlybaigiuxe/assets/images/emailpasswordresetlink.png" alt="Email password reset link screen" width="33%">
+    <img src="quanlybaigiuxe/assets/images/login.png" alt="Log in screen" width="30%">
+    <img src="quanlybaigiuxe/assets/images/forgotpassword.png" alt="Forgot password screen" width="30%">
+    <img src="quanlybaigiuxe/assets/images/emailpasswordresetlink.png" alt="Email password reset link screen" width="30%">
 </p>
 <img src="quanlybaigiuxe/assets/images/index.png" alt="Costumer list screen">
 <img src="quanlybaigiuxe/assets/images/create.png" alt="Create screen">
